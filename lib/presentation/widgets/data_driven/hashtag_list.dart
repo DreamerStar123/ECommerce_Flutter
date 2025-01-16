@@ -47,7 +47,7 @@ class OpenFlutterHashTagList extends StatelessWidget {
           ),
           child: Text(
             tag.title,
-            style: _theme.textTheme.button,
+            style: _theme.textTheme.labelLarge,
           ),
           width: 100,
           height: 20,

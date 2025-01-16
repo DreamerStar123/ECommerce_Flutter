@@ -13,7 +13,7 @@ class OpenFlutterBottomMenu extends StatelessWidget {
   OpenFlutterBottomMenu(this.menuIndex);
 
   Color colorByIndex(ThemeData theme, int index) {
-    return index == menuIndex ? theme.accentColor : theme.primaryColorLight;
+    return index == menuIndex ? theme.colorScheme.secondary : theme.primaryColorLight;
   }
 
   BottomNavigationBarItem getItem(

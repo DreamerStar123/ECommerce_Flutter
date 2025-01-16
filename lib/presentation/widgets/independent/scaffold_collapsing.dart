@@ -54,7 +54,7 @@ class OpenFlutterCollapsingScaffold extends StatelessWidget {
             labelStyle: TextStyle(fontWeight: FontWeight.bold),
             tabs: tabBars,
             controller: tabController,
-            indicatorColor: _theme.accentColor,
+            indicatorColor: _theme.colorScheme.secondary,
             indicatorSize: TabBarIndicatorSize.tab)
         : TabBar(tabs: [],);
 
@@ -95,7 +95,7 @@ class OpenFlutterCollapsingScaffold extends StatelessWidget {
                     child: Transform.translate(
                       child: Text(
                         title,
-                        style: _theme.textTheme.caption,
+                        style: _theme.textTheme.bodySmall,
                       ),
                       offset: Offset(dx, constraints.maxHeight - kToolbarHeight),
                     ),

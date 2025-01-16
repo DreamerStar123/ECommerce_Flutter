@@ -34,11 +34,11 @@ class _OpenFlutterLabelRightCheckboxState extends State<OpenFlutterLabelRightChe
             Container(
                 width: widget.width - 50,
                 child: Text(widget.title,
-                    style: _theme.textTheme.headline4
-                        ?.copyWith(color: _checked ? _theme.accentColor : _theme.primaryColor))),
+                    style: _theme.textTheme.headlineMedium
+                        ?.copyWith(color: _checked ? _theme.colorScheme.secondary : _theme.primaryColor))),
             Container(
               child: Checkbox(
-                activeColor: _theme.accentColor,
+                activeColor: _theme.colorScheme.secondary,
                 checkColor: AppColors.white,
                 value: _checked,
                 onChanged: (bool? value) {

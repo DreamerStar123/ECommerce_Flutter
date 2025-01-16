@@ -40,15 +40,15 @@ class _MyOrderDetailsViewState extends State<MyOrderDetailsView> {
                               text: TextSpan(children: <TextSpan>[
                             TextSpan(
                               text: 'Order: ',
-                              style: _theme.textTheme.headline4,
+                              style: _theme.textTheme.headlineMedium,
                             ),
                             TextSpan(
                               text: '#' + state.orderData!.orderNumber.toString(),
-                              style: _theme.textTheme.headline4?.copyWith(fontWeight: FontWeight.w700),
+                              style: _theme.textTheme.headlineMedium?.copyWith(fontWeight: FontWeight.w700),
                             ),
                           ])),
                           Text(DateFormat('yyyy-MM-dd').format(state.orderData!.orderDate),
-                              style: _theme.textTheme.headline3?.copyWith(color: AppColors.lightGray))
+                              style: _theme.textTheme.displaySmall?.copyWith(color: AppColors.lightGray))
                         ],
                       ),
                       SizedBox(
@@ -59,14 +59,14 @@ class _MyOrderDetailsViewState extends State<MyOrderDetailsView> {
                             text: TextSpan(children: <TextSpan>[
                           TextSpan(
                             text: 'Tacking Number: ',
-                            style: _theme.textTheme.headline4?.copyWith(color: _theme.primaryColorLight),
+                            style: _theme.textTheme.headlineMedium?.copyWith(color: _theme.primaryColorLight),
                           ),
                           TextSpan(
                             text: state.orderData!.trackingNumber,
-                            style: _theme.textTheme.headline4,
+                            style: _theme.textTheme.headlineMedium,
                           ),
                         ])),
-                        Text('Delivered', style: _theme.textTheme.headline4?.copyWith(color: AppColors.green)),
+                        Text('Delivered', style: _theme.textTheme.headlineMedium?.copyWith(color: AppColors.green)),
                       ]),
                       SizedBox(
                         height: AppSizes.sidePadding,
@@ -78,13 +78,13 @@ class _MyOrderDetailsViewState extends State<MyOrderDetailsView> {
                             children: <Widget>[
                               Text(
                                 state.orderData!.totalQuantity.toString(),
-                                style: _theme.textTheme.headline4,
+                                style: _theme.textTheme.headlineMedium,
                               ),
                               Padding(
                                 padding: const EdgeInsets.only(left: AppSizes.linePadding),
                                 child: Text(
                                   'items',
-                                  style: _theme.textTheme.headline4,
+                                  style: _theme.textTheme.headlineMedium,
                                 ),
                               ),
                             ],
@@ -170,13 +170,13 @@ class _MyOrderDetailsViewState extends State<MyOrderDetailsView> {
         children: <Widget>[
           Text(
             label,
-            style: _theme.textTheme.headline4?.copyWith(color: _theme.primaryColorLight),
+            style: _theme.textTheme.headlineMedium?.copyWith(color: _theme.primaryColorLight),
           ),
           Container(
             width: width / 2,
             child: Text(
               text,
-              style: _theme.textTheme.headline4,
+              style: _theme.textTheme.headlineMedium,
             ),
           )
         ]);

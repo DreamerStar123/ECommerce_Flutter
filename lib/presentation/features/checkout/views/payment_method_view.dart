@@ -60,8 +60,8 @@ class _PaymentMethodViewState extends State<PaymentMethodView> {
             Container(
                 padding: EdgeInsets.all(AppSizes.sidePadding),
                 child: Text('An error occured',
-                    style: _theme.textTheme.headline4
-                        ?.copyWith(color: _theme.errorColor)));
+                    style: _theme.textTheme.headlineMedium
+                        ?.copyWith(color: _theme.colorScheme.error)));
           }
         },
         child: BlocBuilder(

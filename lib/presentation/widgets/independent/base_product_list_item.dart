@@ -95,7 +95,7 @@ class BaseProductListItem extends StatelessWidget {
                         child: Text(specialMark!,
                             style: Theme.of(context)
                                 .textTheme
-                                .bodyText1
+                                .bodyLarge
                                 ?.copyWith(
                                     color: AppColors.white,
                                     fontWeight: FontWeight.bold))),

@@ -46,9 +46,9 @@ class ProductEntity extends Entity<int> {
       rating3Count = rating3Count??0,
       rating4Count = rating4Count??0,
       rating5Count = rating5Count??0,
-      isFavourite = isFavourite??false,
-      discountPercent = discountPercent??0,
-      price = (price??0).toDouble(),
+      isFavourite = isFavourite,
+      discountPercent = discountPercent,
+      price = (price).toDouble(),
       categories = categories??[],
       hashTags = hashTags??[],
       super(id);

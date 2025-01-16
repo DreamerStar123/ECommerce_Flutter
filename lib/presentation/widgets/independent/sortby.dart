@@ -30,7 +30,7 @@ class OpenFlutterSortBy extends StatelessWidget {
               title: rule.getSortTitle(),
               sortRules: rule,
               backgroundColor:
-                  rule == currentSortBy ? _theme.accentColor : _theme.accentColor,
+                  rule == currentSortBy ? _theme.colorScheme.secondary : _theme.colorScheme.secondary,
               textColor: rule == currentSortBy ? AppColors.white : AppColors.white,
               onTap: ((rule) => {onSelect(rule)}),
             ))

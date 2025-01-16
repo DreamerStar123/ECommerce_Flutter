@@ -50,7 +50,7 @@ class OpenFlutterRatingSummary extends StatelessWidget {
       children: <Widget>[
         Text(
           rating.toString(),
-          style: Theme.of(context).textTheme.headline3?.copyWith(
+          style: Theme.of(context).textTheme.displaySmall?.copyWith(
                 color: Colors.black,
               ),
         ),
@@ -74,7 +74,7 @@ class OpenFlutterRatingSummary extends StatelessWidget {
     if (showLabel) {
       return Text(
         '${ratingQuantity.toString()} ratings',
-        style: Theme.of(context).textTheme.caption?.copyWith(
+        style: Theme.of(context).textTheme.bodySmall?.copyWith(
               color: Colors.grey,
               fontSize: labelFontSize,
             ),
@@ -171,7 +171,7 @@ class OpenFlutterRatingSummary extends StatelessWidget {
     return Center(
       child: Text(
         starQuantity.quantity.toInt().toString(),
-        style: Theme.of(context).textTheme.caption?.copyWith(
+        style: Theme.of(context).textTheme.bodySmall?.copyWith(
               fontSize: reviewCounterLabelFontSize,
             ),
         textAlign: TextAlign.center,

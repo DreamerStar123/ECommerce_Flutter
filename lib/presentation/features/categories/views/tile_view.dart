@@ -46,8 +46,8 @@ class _CategoriesTileViewState extends State<CategoriesTileView>
           Container(
           padding: EdgeInsets.all(AppSizes.sidePadding),
           child: Text('An error occured',
-              style: _theme.textTheme.headline4
-                  ?.copyWith(color: _theme.errorColor)));
+              style: _theme.textTheme.headlineMedium
+                  ?.copyWith(color: _theme.colorScheme.error)));
     }, child:
             BlocBuilder<CategoryBloc, CategoryState>(builder: (context, state) {
       if (state is CategoryTileViewState) {
@@ -61,17 +61,17 @@ class _CategoriesTileViewState extends State<CategoriesTileView>
                     width: width,
                     padding: EdgeInsets.all(AppSizes.sidePadding * 2),
                     decoration: BoxDecoration(
-                      color: _theme.accentColor,
+                      color: _theme.colorScheme.secondary,
                       borderRadius: BorderRadius.circular(AppSizes.imageRadius),
                     ),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: <Widget>[
                         Text('SUMMER SALES',
-                            style: _theme.textTheme.headline4
+                            style: _theme.textTheme.headlineMedium
                                 ?.copyWith(color: AppColors.white)),
                         Text('Up to 50% off',
-                            style: _theme.textTheme.headline4
+                            style: _theme.textTheme.headlineMedium
                                 ?.copyWith(color: AppColors.white))
                       ],
                     ))),

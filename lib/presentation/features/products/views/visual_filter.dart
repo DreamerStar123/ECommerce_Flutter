@@ -31,10 +31,10 @@ class VisualFilter extends StatelessWidget {
                 AppSizes.linePadding,
               ),
               backgroundColor: Theme.of(context).primaryColor,
-              selectedColor: Theme.of(context).accentColor,
+              selectedColor: Theme.of(context).colorScheme.secondary,
               label: Text(
                 optionHashTag.title,
-                style: Theme.of(context).textTheme.button,
+                style: Theme.of(context).textTheme.labelLarge,
               ),
               onSelected: (value) {
                 onFilterChanged(optionHashTag, value);
@@ -68,10 +68,10 @@ class VisualFilter extends StatelessWidget {
           padding: EdgeInsets.all(
             AppSizes.linePadding,
           ),
-          backgroundColor: Theme.of(context).backgroundColor,
+          backgroundColor: Theme.of(context).colorScheme.background,
           label: Text(
             '        ',
-            style: Theme.of(context).textTheme.button,
+            style: Theme.of(context).textTheme.labelLarge,
           ),
         ));
   }

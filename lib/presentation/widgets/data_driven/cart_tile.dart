@@ -58,7 +58,7 @@ class _OpenFlutterCartTileState extends State<OpenFlutterCartTile> {
                           Container(
                             width: width - 173,
                             child: Text(widget.item.product.title,
-                                style: _theme.textTheme.headline4
+                                style: _theme.textTheme.headlineMedium
                                     ?.copyWith(fontWeight: FontWeight.bold, color: _theme.primaryColor)),
                           ),
                           !widget.orderComplete
@@ -112,7 +112,7 @@ class _OpenFlutterCartTileState extends State<OpenFlutterCartTile> {
                                         alignment: Alignment.center,
                                         padding: EdgeInsets.all(AppSizes.linePadding * 2),
                                         child: Text(widget.item.productQuantity.quantity.toString(),
-                                            style: _theme.textTheme.headline4),
+                                            style: _theme.textTheme.headlineMedium),
                                       ),
                                       InkWell(
                                           onTap: (() =>
@@ -137,15 +137,15 @@ class _OpenFlutterCartTileState extends State<OpenFlutterCartTile> {
                               : Container(
                                   width: 110,
                                   child: Row(children: <Widget>[
-                                    Text('Units: ', style: _theme.textTheme.bodyText1),
+                                    Text('Units: ', style: _theme.textTheme.bodyLarge),
                                     Text(widget.item.productQuantity.quantity.toString(),
-                                        style: _theme.textTheme.bodyText1?.copyWith(color: _theme.primaryColor)),
+                                        style: _theme.textTheme.bodyLarge?.copyWith(color: _theme.primaryColor)),
                                   ])),
                           Container(
                             width: width - 280,
                             alignment: Alignment.centerRight,
                             child:
-                                Text('\$' + (widget.item.price).toStringAsFixed(0), style: _theme.textTheme.headline4),
+                                Text('\$' + (widget.item.price).toStringAsFixed(0), style: _theme.textTheme.headlineMedium),
                           )
                         ])
                       ]))

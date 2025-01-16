@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:openflutterecommerce/domain/entities/entity.dart';
 
 class ShippingAddressEntity extends Entity<int> {

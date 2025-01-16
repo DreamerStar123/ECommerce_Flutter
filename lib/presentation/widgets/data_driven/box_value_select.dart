@@ -77,15 +77,15 @@ class _OpenFlutterSelectValuesBoxesState<T> extends State<OpenFlutterSelectValue
       decoration: BoxDecoration(
           borderRadius: BorderRadius.all(Radius.circular(4)),
           border: Border.all(
-              color: widget.selectedValues.contains(currentValue) ? _theme.accentColor : _theme.primaryColorLight),
-          color: widget.selectedValues.contains(currentValue) ? _theme.accentColor : AppColors.white),
+              color: widget.selectedValues.contains(currentValue) ? _theme.colorScheme.secondary : _theme.primaryColorLight),
+          color: widget.selectedValues.contains(currentValue) ? _theme.colorScheme.secondary : AppColors.white),
       padding: EdgeInsets.symmetric(
           vertical: AppSizes.sidePadding, horizontal: widget.boxWidth == null ? AppSizes.sidePadding : 0),
       child: Text(
         convertValueToString(currentValue).toUpperCase(),
         overflow: TextOverflow.ellipsis,
-        style: _theme.textTheme.headline2?.copyWith(
-          color: widget.selectedValues.contains(currentValue) ? AppColors.white : _theme.accentColor,
+        style: _theme.textTheme.displayMedium?.copyWith(
+          color: widget.selectedValues.contains(currentValue) ? AppColors.white : _theme.colorScheme.secondary,
         ),
       ),
     );

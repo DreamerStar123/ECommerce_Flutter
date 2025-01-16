@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:openflutterecommerce/config/routes.dart';
 import 'package:openflutterecommerce/config/theme.dart';
@@ -31,9 +32,9 @@ class _SignInScreenState extends State<SignInScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.transparent,
-        brightness: Brightness.light,
         elevation: 0,
         iconTheme: IconThemeData(color: AppColors.black),
+        systemOverlayStyle: SystemUiOverlayStyle.dark,
       ),
       backgroundColor: AppColors.background,
       body: BlocConsumer<SignInBloc, SignInState>(

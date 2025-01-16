@@ -33,14 +33,14 @@ class OpenFlutterCheckbox extends StatelessWidget {
               children: <Widget>[
                 Checkbox(
                     activeColor: _theme.primaryColor,
-                    checkColor: _theme.backgroundColor,
+                    checkColor: _theme.colorScheme.background,
                     value: checked,
                     onChanged: ((bool? newValue) => {onTap(newValue!)})),
                 Container(
                   width: width - rightLinkWidth,
                   child: Text(
                     title,
-                    style: _theme.textTheme.headline4?.copyWith(
+                    style: _theme.textTheme.headlineMedium?.copyWith(
                         fontWeight: FontWeight.bold,
                         color: _theme.primaryColor),
                   ),

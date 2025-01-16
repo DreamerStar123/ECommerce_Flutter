@@ -55,7 +55,7 @@ class _Main1ViewState extends State<Main1View> {
                       width: width / 2,
                       child: FittedBox(
                         fit: BoxFit.scaleDown,
-                        child: Text(translate('fashionSale'), style: _theme.textTheme.headline5),
+                        child: Text(translate('fashionSale'), style: _theme.textTheme.headlineSmall),
                       ),
                     ),
                     Container(

@@ -105,7 +105,7 @@ class OpenFlutterProductReviewItem extends StatelessWidget {
       width: double.infinity,
       child: Text(
         writerName,
-        style: Theme.of(context).textTheme.subtitle2,
+        style: Theme.of(context).textTheme.titleSmall,
         textAlign: TextAlign.start,
       ),
     );
@@ -126,7 +126,7 @@ class OpenFlutterProductReviewItem extends StatelessWidget {
         Expanded(
           child: Text(
             reviewDateTime,
-            style: Theme.of(context).textTheme.caption?.copyWith(
+            style: Theme.of(context).textTheme.bodySmall?.copyWith(
                   fontSize: 12,
                 ),
             textAlign: TextAlign.end,
@@ -141,7 +141,7 @@ class OpenFlutterProductReviewItem extends StatelessWidget {
       width: double.infinity,
       child: Text(
         comment,
-        style: Theme.of(context).textTheme.bodyText2?.copyWith(
+        style: Theme.of(context).textTheme.bodyMedium?.copyWith(
               fontSize: 14.0,
             ),
         textAlign: TextAlign.start,
@@ -214,7 +214,7 @@ class OpenFlutterProductReviewItem extends StatelessWidget {
               child: Text(
                 'Helpful',
                 textAlign: TextAlign.end,
-                style: Theme.of(context).textTheme.caption?.copyWith(
+                style: Theme.of(context).textTheme.bodySmall?.copyWith(
                       color: _getHelpfulColor(context),
                       fontSize: helpfulFontSize,
                     ),
@@ -237,6 +237,6 @@ class OpenFlutterProductReviewItem extends StatelessWidget {
   }
 
   Color _getHelpfulColor(BuildContext context) {
-    return isHelpfulMarked ? Theme.of(context).accentColor : Theme.of(context).unselectedWidgetColor;
+    return isHelpfulMarked ? Theme.of(context).colorScheme.secondary : Theme.of(context).unselectedWidgetColor;
   }
 }

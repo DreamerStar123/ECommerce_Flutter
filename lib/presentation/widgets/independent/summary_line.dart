@@ -15,13 +15,13 @@ class OpenFlutterSummaryLine extends StatelessWidget {
         padding: EdgeInsets.symmetric(horizontal: AppSizes.sidePadding, vertical: AppSizes.linePadding),
         child: Row(
           children: <Widget>[
-            Container(width: width / 2, child: Text(title, style: _theme.textTheme.headline2)),
+            Container(width: width / 2, child: Text(title, style: _theme.textTheme.displayMedium)),
             Container(
                 alignment: Alignment.centerRight,
                 width: width / 2,
                 child: Text(summary,
                     style:
-                        _theme.textTheme.headline2?.copyWith(fontWeight: FontWeight.bold, color: _theme.primaryColor))),
+                        _theme.textTheme.displayMedium?.copyWith(fontWeight: FontWeight.bold, color: _theme.primaryColor))),
           ],
         ));
   }

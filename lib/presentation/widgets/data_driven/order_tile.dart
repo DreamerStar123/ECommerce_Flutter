@@ -37,16 +37,16 @@ class OpenFlutterOrderTile extends StatelessWidget {
                         text: TextSpan(children: <TextSpan>[
                       TextSpan(
                         text: 'Order: ',
-                        style: _theme.textTheme.headline4
+                        style: _theme.textTheme.headlineMedium
                             ?.copyWith(color: _theme.primaryColorLight, fontWeight: FontWeight.normal),
                       ),
                       TextSpan(
                         text: '#' + order.orderNumber.toString(),
-                        style: _theme.textTheme.headline4?.copyWith(fontWeight: FontWeight.w700),
+                        style: _theme.textTheme.headlineMedium?.copyWith(fontWeight: FontWeight.w700),
                       ),
                     ])),
                     Text(DateFormat('yyyy-MM-dd').format(order.orderDate),
-                        style: _theme.textTheme.headline2?.copyWith(color: AppColors.red))
+                        style: _theme.textTheme.displayMedium?.copyWith(color: AppColors.red))
                   ],
                 ),
                 SizedBox(
@@ -60,13 +60,13 @@ class OpenFlutterOrderTile extends StatelessWidget {
                       children: <Widget>[
                         Text(
                           'Tacking Number: ',
-                          style: _theme.textTheme.headline4?.copyWith(color: _theme.primaryColorLight),
+                          style: _theme.textTheme.headlineMedium?.copyWith(color: _theme.primaryColorLight),
                         ),
                         Padding(
                           padding: const EdgeInsets.only(left: AppSizes.sidePadding),
                           child: Text(
                             order.trackingNumber,
-                            style: _theme.textTheme.headline4,
+                            style: _theme.textTheme.headlineMedium,
                           ),
                         ),
                       ],
@@ -81,13 +81,13 @@ class OpenFlutterOrderTile extends StatelessWidget {
                           children: <Widget>[
                             Text(
                               'Quantity: ',
-                              style: _theme.textTheme.headline4?.copyWith(color: _theme.primaryColorLight),
+                              style: _theme.textTheme.headlineMedium?.copyWith(color: _theme.primaryColorLight),
                             ),
                             Padding(
                               padding: const EdgeInsets.only(left: AppSizes.linePadding),
                               child: Text(
                                 order.totalQuantity.toString(),
-                                style: _theme.textTheme.headline4,
+                                style: _theme.textTheme.headlineMedium,
                               ),
                             ),
                           ],
@@ -96,14 +96,14 @@ class OpenFlutterOrderTile extends StatelessWidget {
                           children: <Widget>[
                             Text(
                               'Totat Amount: ',
-                              style: _theme.textTheme.headline4?.copyWith(color: _theme.primaryColorLight),
+                              style: _theme.textTheme.headlineMedium?.copyWith(color: _theme.primaryColorLight),
                             ),
                             Padding(
                               padding: const EdgeInsets.only(left: AppSizes.sidePadding),
                               child: Text(
                                 '\$' + order.totalPrice.toStringAsFixed(0),
                                 //total amount
-                                style: _theme.textTheme.headline4,
+                                style: _theme.textTheme.headlineMedium,
                               ),
                             ),
                           ],
@@ -129,11 +129,11 @@ class OpenFlutterOrderTile extends StatelessWidget {
                           side: BorderSide(color: AppColors.black, width: 2)),
                       child: Text(
                         'Details',
-                        style: _theme.textTheme.headline4,
+                        style: _theme.textTheme.headlineMedium,
                       ),
                     ),
                     Text(order.orderStatus.toString().split('.')[1],
-                        style: _theme.textTheme.headline4?.copyWith(color: AppColors.green)),
+                        style: _theme.textTheme.headlineMedium?.copyWith(color: AppColors.green)),
                   ],
                 )
               ],

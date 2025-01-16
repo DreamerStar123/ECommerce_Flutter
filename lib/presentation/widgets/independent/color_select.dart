@@ -75,7 +75,7 @@ class _OpenFlutterColorSelectState extends State<OpenFlutterColorSelect> {
             Radius.circular(22),
           ),
           border: widget.selectedColors.contains(color)
-              ? Border.all(color: _theme.accentColor)
+              ? Border.all(color: _theme.colorScheme.secondary)
               : null,
         ),
         padding: EdgeInsets.all(4),

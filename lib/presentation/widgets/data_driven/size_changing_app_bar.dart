@@ -50,7 +50,7 @@ class SizeChangingAppBar extends StatelessWidget {
               padding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
               child: Text(
                 title ?? 'Loading...',
-                style: Theme.of(context).textTheme.caption,
+                style: Theme.of(context).textTheme.bodySmall,
               ),
             ),
             Container(

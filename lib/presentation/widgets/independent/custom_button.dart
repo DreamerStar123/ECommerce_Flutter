@@ -90,8 +90,8 @@ class OpenFlutterButton extends StatelessWidget {
   Widget _buildTitle(ThemeData _theme) {
     return Text(
       title,
-      style: _theme.textTheme.button?.copyWith(
-        backgroundColor: _theme.textTheme.button?.backgroundColor,
+      style: _theme.textTheme.labelLarge?.copyWith(
+        backgroundColor: _theme.textTheme.labelLarge?.backgroundColor,
         color: textColor,
       ),
     );
@@ -106,7 +106,7 @@ class OpenFlutterButton extends StatelessWidget {
         child: Icon(
           icon,
           size: iconSize,
-          color: theme.textTheme.button?.color,
+          color: theme.textTheme.labelLarge?.color,
         ),
       );
     }

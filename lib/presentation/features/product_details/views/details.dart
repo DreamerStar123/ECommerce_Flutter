@@ -59,8 +59,8 @@ class _ProductDetailsViewState extends State<ProductDetailsView> {
             Container(
                 padding: EdgeInsets.all(AppSizes.sidePadding),
                 child: Text('An error occured',
-                    style: _theme.textTheme.headline4
-                        ?.copyWith(color: _theme.errorColor)));
+                    style: _theme.textTheme.headlineMedium
+                        ?.copyWith(color: _theme.colorScheme.error)));
           }
         },
         child: BlocBuilder(
@@ -271,11 +271,11 @@ class _ProductDetailsViewState extends State<ProductDetailsView> {
             children: <Widget>[
               Text(
                 widget.product.title,
-                style: theme.textTheme.headline6,
+                style: theme.textTheme.titleLarge,
               ),
               Text(
                 '\$' + widget.product.price.toString(),
-                style: theme.textTheme.headline6,
+                style: theme.textTheme.titleLarge,
               )
             ],
           ),
@@ -283,7 +283,7 @@ class _ProductDetailsViewState extends State<ProductDetailsView> {
               ? Container()
               : Text(
                   widget.category!.name,
-                  style: theme.textTheme.bodyText1,
+                  style: theme.textTheme.bodyLarge,
                 ),
           SizedBox(
             height: 5,

@@ -143,7 +143,7 @@ class OpenFlutterProductRating extends StatelessWidget {
           ' (' + ratingCount.toInt().toString() + ')',
           style: Theme.of(context)
               .textTheme
-              .bodyText1
+              .bodyLarge
               ?.copyWith(fontSize: labelFontSize),
           textAlign: TextAlign.center,
         ),

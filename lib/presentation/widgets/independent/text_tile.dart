@@ -25,8 +25,8 @@ class OpenFlutterTextTile extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-                      Text(title, style: _theme.textTheme.headline4),
-                      Text(subtitle, style: _theme.textTheme.bodyText1)
+                      Text(title, style: _theme.textTheme.headlineMedium),
+                      Text(subtitle, style: _theme.textTheme.bodyLarge)
                     ],
                   ),
                 ),
