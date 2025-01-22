@@ -6,7 +6,6 @@ import 'package:flutter_translate/flutter_translate.dart';
 import 'package:openflutterecommerce/config/routes.dart';
 import 'package:openflutterecommerce/config/theme.dart';
 import 'package:openflutterecommerce/data/repositories/abstract/favorites_repository.dart';
-import 'package:openflutterecommerce/data/model/filter_rules.dart';
 import 'package:openflutterecommerce/data/repositories/abstract/product_repository.dart';
 import 'package:openflutterecommerce/data/repositories/abstract/user_repository.dart';
 import 'package:openflutterecommerce/locator.dart';
@@ -19,7 +18,6 @@ import 'package:openflutterecommerce/presentation/features/sign_in/signin_screen
 import 'package:openflutterecommerce/presentation/features/sign_up/signup_screen.dart';
 import 'package:openflutterecommerce/presentation/features/splash_screen.dart';
 
-import 'config/routes.dart';
 import 'data/repositories/abstract/cart_repository.dart';
 import 'data/repositories/abstract/category_repository.dart';
 import 'presentation/features/authentication/authentication.dart';
@@ -137,7 +135,6 @@ class OpenFlutterEcommerceApp extends StatelessWidget {
             } else {
               return SplashScreen();
             }
-            return ProfileScreen();
           }),
     };
   }

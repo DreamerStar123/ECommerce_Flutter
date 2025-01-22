@@ -5,8 +5,6 @@ analyzer:
     todo: ignore
     omit_local_variable_types: ignore
     prefer_collection_literals: ignore
-    null_aware_in_logical_operator: ignore
-    null_aware_in_condition: ignore
     deprecated_member_use: ignore
     await_only_futures: ignore 
     avoid_single_cascade_in_expression_statements: ignore
